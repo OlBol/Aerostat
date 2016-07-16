@@ -1,0 +1,22 @@
+.page-header, .page-footer{
+  min-height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2c2c2c;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $screen-md){
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @media (min-width: $screen-lg){
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+
+@import 'logo-text';
+@import 'main-nav';

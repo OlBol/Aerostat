@@ -1,0 +1,15 @@
+.payment{
+  padding: 50px 20px;
+
+  @media (min-width: $screen-md) {
+    padding: 50px 50px;
+  }
+
+  @media (min-width: $screen-lg){
+    display: flex;
+    padding: 50px 90px;
+  }
+}
+
+@import 'tabs';
+@import 'accordion';

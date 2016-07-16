@@ -1,0 +1,119 @@
+.cost-form{
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__block{
+    padding: 10px 0;
+  }
+
+  &__form{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    height: 40px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: transparent;
+  }
+
+  &__label{
+    margin-bottom: 10px;
+  }
+
+  &__wrapper{
+    min-width: 100%;
+
+    &--name {
+      position: relative;
+
+      &:before {
+        content: '';
+        background-image: url(../img/man.png);
+        background-repeat: no-repeat;
+        height: 20px;
+        width: 20px;
+        position: absolute;
+        top: 48px;
+        left: -125px;
+      }
+
+      > .cost-form__form{
+        padding-left: 40px;
+      }
+    }
+
+    &--tel {
+      position: relative;
+
+      &:before {
+        content: '';
+        background-image: url(../img/tel.png);
+        background-repeat: no-repeat;
+        height: 20px;
+        width: 20px;
+        position: absolute;
+        top: 45px;
+        left: -65px;
+      }
+
+      > .cost-form__form{
+        padding-left: 40px;
+      }
+    }
+  }
+
+  &__text{
+    display: none;
+  }
+
+  &__price{
+    color: $tabs;
+    font-size: 28px;
+  }
+
+  &__btn{
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 5px;
+    background-color: $dash;
+    border: none;
+    float: right;
+  }
+
+  @media (min-width: $screen-md) {
+    margin-top: 30px;
+    background-image: url(../img/form-backg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    padding: 0 250px;
+  }
+
+  &__wrapper{
+    background-color: #fff;
+    height: 480px;
+    padding: 10px 20px;
+  }
+
+  &__text{
+    display: inline-block;
+    font-weight: bold;
+  }
+
+  @media (min-width: $screen-lg) {
+    width: 50%;
+    background-image: none;
+    height: inherit;
+    margin: 0;
+    padding: 0 50px;
+
+    &__wrapper{
+      padding: 0;
+      height: inherit;
+    }
+  }
+}

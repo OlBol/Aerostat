@@ -1,0 +1,35 @@
+.gallery{
+  padding: 50px 20px;
+
+  &__title{
+    font-size: 28px;
+    text-align: center;
+    position: relative;
+    padding-bottom: 15px;
+
+    &:after{
+      content: '';
+      display: inline-block;
+      position: absolute;
+      background-color: $dash;
+      height: 5px;
+      width: 60px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+    }
+  }
+
+  @media (min-width: $screen-md){
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @media (min-width: $screen-lg){
+    //padding-left: 90px;
+    //padding-right: 90px;
+  }
+}
+
+@import 'slider';

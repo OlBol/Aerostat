@@ -1,0 +1,11 @@
+- var navList = [{title: 'Кто мы', link: '#about'}, {title: 'Фотографии', link: '#gallery'}, {title: 'План полета', link: '#flight'}, {title: 'Заказать', link: '#cost'}, {title: 'Команда', link: '#instructors'}, {title: 'Контакты', link: '#contacts'}]
+
+header.page-header
+    .logo-text
+        a.logo-text__link(href='index.html') Монгольфьеркин и КО
+    nav.main-nav
+        ul.main-nav__list
+            each item in navList
+                li.main-nav__item
+                    a.main-nav__link(href=item.link)= item.title
+        a.main-nav__toggle(href='#') &#9776;

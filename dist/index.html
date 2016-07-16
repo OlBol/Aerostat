@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Aerostat</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="logo-text"><a class="logo-text__link" href="index.html">Монгольфьеркин и КО</a></div>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a class="main-nav__link" href="#about">Кто мы</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#gallery">Фотографии</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#flight">План полета</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#cost">Заказать</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#instructors">Команда</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#contacts">Контакты</a></li>
+        </ul><a class="main-nav__toggle" href="#">&#9776;</a>
+      </nav>
+    </header>
+    <main>
+      <div class="promo-block">
+        <h1 class="promo-block__title">Организация полетов на воздушных шарах</h1><a class="promo-block__btn" href="#flight">Подробнее</a>
+        <ul class="promo-block__list">
+          <li class="promo-block__item">Увлекательная экскурсия</li>
+          <li class="promo-block__item">Запоминающийся подарок</li>
+          <li class="promo-block__item">Удивительный опыт</li>
+          <li class="promo-block__item">Романтическая прогулка</li>
+        </ul>
+      </div>
+      <div class="advantages">
+        <div class="advantages__item">
+          <p class="advantages__text">Современный надежный шар</p>
+        </div>
+        <div class="advantages__item">
+          <p class="advantages__text">Обучение пилотированию</p>
+        </div>
+        <div class="advantages__item">
+          <p class="advantages__text">Фотосъемка в полете</p>
+        </div>
+        <div class="advantages__item">
+          <p class="advantages__text">Потрясающие виды</p>
+        </div>
+      </div>
+      <div class="about" id="about">
+        <article class="about__block">
+          <h3 class="about__title">Вкрадце</h3>
+          <p class="about__text">Более 5 лет воздухоплавательная команда Нева-Аэро выполняет полёты на воздушных шарах для гостей и жителей Петербурга над одними из самых живописных мест России – Царским Селом и Павловском, возведенных в Пушкинском районе Санкт-Петербурга.</p>
+          <p class="about__text">Мы предлагаем полетать с нами!</p>
+        </article>
+        <div class="about__video">
+          <iframe src="https://www.youtube.com/embed/qEdvUbGaIqk" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="gallery" id="gallery">
+        <h3 class="gallery__title">Галерея</h3>
+        <div class="slider">
+          <!--span.slider__arrow--prev-->
+          <div class="slider__item"><img class="slider__img" src="img/slide-1.png" alt="Изображение"></div>
+          <div class="slider__item"><img class="slider__img" src="img/slide-2.png" alt="Изображение"></div>
+          <div class="slider__item"><img class="slider__img" src="img/slide-3.png" alt="Изображение"></div>
+          <div class="slider__item"><img class="slider__img" src="img/slide-4.png" alt="Изображение"></div>
+          <!--span.slider__arrow--next-->
+        </div>
+      </div>
+      <div class="flight" id="flight">
+        <h3 class="flight__title">Как проходят полеты</h3>
+        <ul class="flight__list">
+          <li class="flight__item"></li>
+          <li class="flight__item"></li>
+          <li class="flight__item"></li>
+          <li class="flight__item"></li>
+          <li class="flight__item"></li>
+        </ul>
+        <div class="flight__programm">
+          <div class="flight__counter">
+            <p class="flight__text">До ближайшего полета:</p>
+            <div class="counter">
+              <ul class="counter__list">
+                <li class="counter__item"><span class="counter__number">100</span><span class="counter__text">дней</span></li>
+                <li class="counter__item"><span class="counter__number">22</span><span class="counter__text">часа</span></li>
+                <li class="counter__item"><span class="counter__number">12</span><span class="counter__text">минут</span></li>
+                <li class="counter__item"><span class="counter__number">43</span><span class="counter__text">секунд</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="cost" id="cost">
+        <div class="cost__wrapper">
+          <h3 class="cost__title">Рассчитать стоимость</h3>
+          <p class="cost__text">Итак, в назначенное время вы приехали на место полета. Команда уже готовит шар к полету - определяется направление ветра, запускаются горелки.</p>
+          <p class="cost__text">Оболочка начинает заполняться теплым воздухом, и аэростат делает первый «вздох».</p>
+          <p class="cost__text">Выбирайте, куда мы полетим сегодня!</p>
+        </div>
+        <div class="cost-form">
+          <div class="cost-form__wrapper">
+            <form>
+              <p class="cost-form__block">
+                <label class="cost-form__label" for="fly-way">Маршрут полета:</label>
+                <select class="cost-form__form" id="fly-way" name="fly-way-select">
+                  <option value="one-route">Один маршрут</option>
+                  <option value="another-route">Другой маршрут</option>
+                </select>
+              </p>
+              <p class="cost-form__block">
+                <label class="cost-form__label" for="number-of-people">Количество человек:</label>
+                <select class="cost-form__form" id="number-of-people" name="number-of-people-select">
+                  <option value="one-people">1</option>
+                  <option value="two-people">2</option>
+                  <option value="three-people">3</option>
+                  <option value="four-people">4</option>
+                  <option value="five-people">5</option>
+                </select>
+              </p>
+              <p class="cost-form__block">
+                <label class="cost-form__label" for="first-last-name">Имя и фамилия:</label><span class="cost-form__wrapper--name">
+                  <input class="cost-form__form" id="first-last-name" type="text" placeholder="Ольга Болотова"></span>
+              </p>
+              <p class="cost-form__block">
+                <label class="cost-form__label" for="phone-number">Телефон:</label><span class="cost-form__wrapper--tel">
+                  <input class="cost-form__form" id="phone-number" type="tel" placeholder="+79818169862"></span>
+              </p>
+              <p class="cost-form__block">
+                <p class="cost-form__text">Стоимость:&ensp;</p><span class="cost-form__price">9000 Р</span>
+                <input class="cost-form__btn" type="submit" value="Полетели!">
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+      <div class="payment">
+        <div class="tabs">
+          <h3 class="tabs__title">Способы оплаты</h3>
+          <label class="tabs__label" for="cash">Наличными</label>
+          <input class="tabs__input tabs__input--cash" id="cash" type="radio" name="tabs" checked>
+          <label class="tabs__label" for="courier">Курьером</label>
+          <input class="tabs__input tabs__input--courier" id="courier" type="radio" name="tabs">
+          <label class="tabs__label" for="card">Картой</label>
+          <input class="tabs__input tabs__input--card" id="card" type="radio" name="tabs">
+          <h4 class="tabs__mobile-title">Наличными</h4>
+          <p class="tabs__text tabs__text--cash">Вы можете оплатить услугу,  приехав к нам в офис. Для этого Вам необходимо предупредить об этом:</p>
+          <p class="tabs__text tabs__text--cash">— по телефону: +7 (812) 640-19-39,<br>— или по почте: mnebyvnebo@gmail.com</p>
+          <p class="tabs__text tabs__text--cash">Оплачивая услугу в офисе, Вы получаете все документы</p>
+          <h4 class="tabs__mobile-title">Курьером</h4>
+          <p class="tabs__text tabs__text--courier">Вы можете оплатить услугу в любом районе города и в удобное время, вызвав курьера. Для этого Вам необходимо связаться с нашими сотрудниками и сообщить об этом:</p>
+          <p class="tabs__text tabs__text--courier">— по телефону: +7 (812) 640-19-39,<br>— или по почте: mnebyvnebo@gmail.com</p>
+          <p class="tabs__text tabs__text--courier">Оплачивая услугу курьером, Вы получаете все документы подтверждающие оплату.</p>
+          <h4 class="tabs__mobile-title">Картой</h4>
+          <p class="tabs__text tabs__text--card">В ближайшее время мы добавим возможность оплаты с помощью кредитной карты VISA и MasterCard. Пока просим вас использовать наличные деньги для оплаты услуг.</p>
+        </div>
+        <section class="accordion">
+          <h3 class="accordion__title">Часто задаваемые вопросы</h3>
+          <div class="accordion__item">
+            <label class="accordion__label" for="flight">Что взять с собой в полет?</label>
+            <input class="accordion__input" id="flight" type="checkbox" name="accordion" checked>
+            <p class="accordion__text">Обязательно возьмите с собой теплую одежду и немного вкусной еды, которую не нужно разогревать, а еще термос горячим чаем. А мы обязательно дадим вам теплые пледы.</p>
+          </div>
+          <div class="accordion__item">
+            <label class="accordion__label" for="side">Что если мы улетим не в ту сторону?</label>
+            <input class="accordion__input" id="side" type="checkbox" name="accordion">
+            <p class="accordion__text">Обязательно возьмите с собой теплую одежду и немного вкусной еды, которую не нужно разогревать, а еще термос горячим чаем. А мы обязательно дадим вам теплые пледы.</p>
+          </div>
+          <div class="accordion__item">
+            <label class="accordion__label" for="badly">Что делать, если в полете станет плохо?</label>
+            <input class="accordion__input" id="badly" type="checkbox" name="accordion">
+            <p class="accordion__text">Обязательно возьмите с собой теплую одежду и немного вкусной еды, которую не нужно разогревать, а еще термос горячим чаем. А мы обязательно дадим вам теплые пледы.</p>
+          </div>
+          <div class="accordion__item">
+            <label class="accordion__label" for="awesome">А полет – это действительно так здорово?</label>
+            <input class="accordion__input" id="awesome" type="checkbox" name="accordion">
+            <p class="accordion__text">Обязательно возьмите с собой теплую одежду и немного вкусной еды, которую не нужно разогревать, а еще термос горячим чаем. А мы обязательно дадим вам теплые пледы.</p>
+          </div>
+        </section>
+      </div>
+      <div class="facts">
+        <div class="facts__item">
+          <p class="facts__number">700</p>
+          <p class="facts__text">Полетов&nbsp;<br>в год</p>
+        </div>
+        <div class="facts__item">
+          <p class="facts__number">3000</p>
+          <p class="facts__text">Дальность&nbsp;<br>в метрах</p>
+        </div>
+        <div class="facts__item">
+          <p class="facts__number">3</p>
+          <p class="facts__text">Воздушных&nbsp;<br>шара</p>
+        </div>
+        <div class="facts__item">
+          <p class="facts__number">12</p>
+          <p class="facts__text">Человек&nbsp;<br>в команде</p>
+        </div>
+      </div>
+      <div class="instructors" id="instructors">
+        <h3 class="instructors__title">Команда инструкторов</h3>
+        <div class="instructors__wrapper">
+          <div class="instructors__item"><img class="instructors__photo" src="img/instructor-maria.png" alt="Член команды">
+            <p class="instructors__name">Мария Мариева<span class="instructors__position">Старший пилот</span></p>
+          </div>
+          <div class="instructors__item"><img class="instructors__photo" src="img/instructor-karina.png" alt="Член команды">
+            <p class="instructors__name">Карина Каринова<span class="instructors__position">Авиадспетчер</span></p>
+          </div>
+          <div class="instructors__item"><img class="instructors__photo" src="img/instructor-irina.png" alt="Член команды">
+            <p class="instructors__name">Ирина Иринова<span class="instructors__position">Авиатехник</span></p>
+          </div>
+          <div class="instructors__item"><img class="instructors__photo" src="img/instructor-alena.png" alt="Член команды">
+            <p class="instructors__name">Алена Аленова<span class="instructors__position">Старший пилот</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="rewiews">
+        <h3 class="rewiews__title">Отзывы</h3>
+        <div class="rewiews__wrapper">
+          <div class="rewiews__item"><img class="rewiews__img" src="img/rewiew-olga.png" alt="Фото комментатора">
+            <p class="rewiews__name">Ольга Алексеева</p>
+            <p class="rewiews__text">Оооо это было чудесно!!! Я не знала что воздушные шары такие огромные. Забавно, большой шар и маленькая корзинка. Полет восхитительный, выше всяких похвал. Мы побывали в самом красивом месте на Земле - в небе, оттуда открываются потрясающие виды.</p>
+          </div>
+          <div class="rewiews__item"><img class="rewiews__img" src="img/rewiew-artem.png" alt="Фото комментатора">
+            <p class="rewiews__name">Артем Рыбкин</p>
+            <p class="rewiews__text">Жене подарил полет на воздушном шаре. Сделал сюрприз на день рождения. Жена была в восторге, мне и самому понравилось, очень необычные ощущения от полета, хоть не самолет, а летит быстро, маршрут подобрали красивый. Cпасибо вам, нам все понравилось.</p>
+          </div>
+        </div>
+      </div>
+      <div class="contacts" id="contacts">
+        <div class="contacts__address">
+          <h4 class="contacts__title">Запишите наш адрес:</h4>
+          <p class="contacts__location">Санкт-Петербург, Вяземский 5-7</p>
+        </div>
+        <div class="contacts__office">
+          <h4 class="contacts__title">Наш офис в Питере:</h4>
+          <p class="contacts__location">Санкт-Петербург,<br> Вяземский 5-7</p><a class="contacts__phone" href="tel:+79818169862">816-98-62</a>
+        </div>
+        <div class="contacts__office">
+          <h4 class="contacts__title">Наш офис в Петергофе:</h4>
+          <p class="contacts__location">Санкт-Петербург,<br> Аэродромная 16</p><a class="contacts__phone" href="tel:+79818169862">816-98-62</a>
+        </div>
+        <div class="contacts__social"><a class="contacts__social--email" href="mailto:olbolot@gmail.com">olbolot@gmail.com</a><a class="contacts__social--vk" href="https://vk.com/olbol" target="_blank"></a><a class="contacts__social--fb" href="https://facebook.com/olbol" target="_blank"></a><a class="contacts__social--inst" href="https://instagram.com/olbolot" target="_blank"></a></div>
+      </div>
+    </main>
+    <header class="page-header">
+      <div class="logo-text"><a class="logo-text__link" href="index.html">Монгольфьеркин и КО</a></div>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a class="main-nav__link" href="#about">Кто мы</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#gallery">Фотографии</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#flight">План полета</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#cost">Заказать</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#instructors">Команда</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#contacts">Контакты</a></li>
+        </ul><a class="main-nav__toggle" href="#">&#9776;</a>
+      </nav>
+    </header>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/main.js"></script>
+    <!--script(src='js/jquery-migrate-1.4.1.min.js')-->
+    <!--script(src='js/owl.carousel.min.js')-->
+  </body>
+</html>

@@ -1,0 +1,189 @@
+.flight{
+  padding-top: 70px;
+
+  &__title{
+    font-size: 28px;
+    text-align: center;
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+
+    &:after{
+      content: '';
+      display: inline-block;
+      position: absolute;
+      background-color: $dash;
+      height: 5px;
+      width: 60px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+    }
+  }
+
+  &__list{
+    font-size: 22px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+  }
+
+  &__item{
+    height: 55px;
+    padding: 0 50px;
+    list-style-type: none;
+    position: relative;
+    margin-top: 20px;
+    width: 100%;
+
+    &:after{
+      content: 'Взлет';
+      position: absolute;
+      height: 55px;
+      top: 10px;
+      left: 50px;
+      z-index: 2;
+    }
+
+    &:nth-child(2):after{
+      content: 'Набираем высоту';
+      width: 190px;
+    }
+
+    &:nth-child(3):after{
+      content: 'Летаем';
+    }
+
+    &:nth-child(4):after{
+      content: 'Снижаемся';
+    }
+
+    &:nth-child(5):after{
+      content: 'Садимся';
+    }
+
+    &:before{
+      content: '1';
+      color: #fff;
+      background-image: url(../img/ball.png);
+      background-repeat: no-repeat;
+      position: absolute;
+      height: 55px;
+      width: 38px;
+      left: 0;
+      text-align: center;
+    }
+
+    &:nth-child(2):before{
+      content: '2';
+    }
+
+    &:nth-child(3):before{
+      content: '3';
+    }
+
+    &:nth-child(4):before{
+      content: '4';
+    }
+
+    &:nth-child(5):before{
+      content: '5';
+    }
+  }
+
+  &__programm{
+    background-image: url(../img/mountain-sm.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+    position: relative;
+  }
+
+  &__counter{
+    background-color: #000;
+    opacity: 0.5;
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  &__text{
+    color: #fff;
+    font-size: 32px;
+  }
+
+  @media (min-width: $screen-md) {
+
+    &__programm{
+      background-image: url(../img/mountain-md.png);
+      position: relative;
+    }
+
+    &__counter{
+      height: 100px;
+    }
+
+    &__list{
+      width: 100%;
+      height: 300px;
+      position: absolute;
+      z-index: 1;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      padding: 0;
+    }
+
+    &__item{
+      padding: 0;
+      text-align: center;
+
+      &:first-child, &:last-child{
+        top: 180px;
+      }
+
+      &:nth-child(2), &:nth-child(4){
+        top: 100px;
+      }
+
+      &:after{
+        height: 55px;
+        width: 120px;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+      }
+
+      &:nth-child(2):after{
+        width: 190px;
+      }
+
+      &:before{
+        height: 55px;
+        width: 38px;
+        top: 40px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+
+  @media (min-width: $screen-lg) {
+    &__programm{
+      background-image: url(../img/mountain.png);
+    }
+  }
+}
+
+@import 'counter';

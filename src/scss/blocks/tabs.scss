@@ -1,0 +1,76 @@
+.tabs{
+  &__input, &__label{
+    display: none;
+  }
+
+  &__title{
+    margin-bottom: 30px;
+    font-size: 28px;
+    position: relative;
+    padding-bottom: 15px;
+
+    &:after{
+      content: '';
+      display: inline-block;
+      position: absolute;
+      background-color: $dash;
+      height: 5px;
+      width: 60px;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  &__mobile-title{
+    padding: 10px 0;
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  &__text{
+    padding: 10px 0;
+    font-size: 18px;
+  }
+
+  @media (min-width: $screen-md){
+
+    &__mobile-title{
+      display: none;
+    }
+
+    &__label{
+      cursor: pointer;
+      background-color: $tabs;
+      color: #fff;
+      text-align: center;
+      padding: 10px 20px;;
+      display: inline-block;
+      margin: 0 20px 30px 0;
+    }
+
+    &__text{
+      display: none;
+    }
+
+    &__input{
+      display: none;
+
+      &--cash:checked ~ .tabs__text--cash{
+        display: block;
+      }
+
+      &--courier:checked ~ .tabs__text--courier{
+        display: block;
+      }
+
+      &--card:checked ~ .tabs__text--card{
+        display: block;
+      }
+    }
+  }
+
+  @media (min-width: $screen-lg){
+    width: 50%;
+    padding-right: 20px;
+  }
+}

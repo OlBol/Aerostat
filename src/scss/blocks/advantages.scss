@@ -1,0 +1,93 @@
+.advantages{
+    font-size: 18px;
+    padding: 50px 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    &__text::before{
+      content: '';
+      background-repeat: no-repeat;
+      position: absolute;
+      width: 80px;
+      height: 60px;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      left: 10px;
+    }
+    
+    &__item {
+      max-width: 360px;
+      margin: 0 auto;
+      position: relative;
+      padding-left: 100px;
+      display: flex;
+      align-items: center;
+      height: 80px;
+      box-sizing: border-box;
+
+      &:first-child .advantages__text::before{
+        background-image: url(../img/finger.png);
+      }
+
+      &:nth-child(2) .advantages__text::before{
+        background-image: url(../img/glasses.png);
+        height: 30px;
+      }
+
+      &:nth-child(3) .advantages__text::before{
+        background-image: url(../img/camera.png);
+        bottom: 0;
+      }
+
+      &:last-child .advantages__text::before{
+        background-image: url(../img/binoculars.png);
+        height: 40px;
+      }
+    }
+
+  @media (min-width: $screen-md) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    &__item{
+      width: 35%;
+      min-width: 35%;
+
+    }
+
+    &__item{
+      &:first-child, &:last-child {
+
+      }
+    }
+  }
+
+  @media (min-width: $screen-lg) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &__item{
+      width: 20%;
+      height: 180px;
+      min-width: 20%;
+
+      &:first-child .advantages__text::before{
+        bottom: auto;
+      }
+
+      &:last-child .advantages__text::before{
+        bottom: auto;
+      }
+
+      &:first-child, &:last-child {
+        flex-wrap: wrap;
+        align-items: flex-start;
+      }
+    }
+  }
+}

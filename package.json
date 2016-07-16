@@ -1,0 +1,51 @@
+{
+  "name": "aerostat",
+  "version": "1.0.0",
+  "description": "project",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-csscomb": "^3.0.7",
+    "gulp-sass": "^2.3.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OlBol/Aerostat.git"
+  },
+  "keywords": [
+    "project"
+  ],
+  "author": "Olga Bolotova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OlBol/Aerostat/issues"
+  },
+  "homepage": "https://github.com/OlBol/Aerostat#readme",
+  "devDependencies": {
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-cached": "^1.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-concat-css": "^2.2.0",
+    "gulp-config": "^0.3.0",
+    "gulp-csscomb": "^3.0.7",
+    "gulp-debug": "^2.1.2",
+    "gulp-minify-css": "^1.2.3",
+    "gulp-newer": "^1.1.0",
+    "gulp-pug": "^3.0.3",
+    "gulp-remember": "^0.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-run-sequence": "^0.3.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-watch": "^4.3.5",
+    "jade": "^1.11.0",
+    "require-dir": "^0.3.0",
+    "run-sequence": "^1.1.5"
+  }
+}

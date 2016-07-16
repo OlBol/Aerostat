@@ -1,0 +1,28 @@
+.cost-form
+    .cost-form__wrapper
+        form
+            p.cost-form__block
+                label.cost-form__label(for='fly-way') Маршрут полета:
+                select#fly-way.cost-form__form(name='fly-way-select')
+                    option(value='one-route') Один маршрут
+                    option(value='another-route') Другой маршрут
+            p.cost-form__block
+                label.cost-form__label(for='number-of-people') Количество человек:
+                select#number-of-people.cost-form__form(name='number-of-people-select')
+                    option(value='one-people') 1
+                    option(value='two-people') 2
+                    option(value='three-people') 3
+                    option(value='four-people') 4
+                    option(value='five-people') 5
+            p.cost-form__block
+                label.cost-form__label(for='first-last-name') Имя и фамилия:
+                span.cost-form__wrapper--name
+                    input#first-last-name.cost-form__form(type='text' placeholder='Ольга Болотова')
+            p.cost-form__block
+                label.cost-form__label(for='phone-number') Телефон:
+                span.cost-form__wrapper--tel
+                    input#phone-number.cost-form__form(type='tel' placeholder='+79818169862')
+            p.cost-form__block
+                p.cost-form__text Стоимость:&ensp;
+                span.cost-form__price 9000 Р
+                input.cost-form__btn(type='submit' value='Полетели!')
