@@ -7,11 +7,12 @@
 
   &:after, &:before{
     content: '';
-    background-image: url(../img/slider-arrow.png);
+    background-image: url(../img/png-sprite.png);
+    background-position: -137px -40px;
     background-repeat: no-repeat;
     position: absolute;
     width: 20px;
-    height: 35px;
+    height: 34px;
     top: 40%;
     right: 0;
     cursor: pointer;

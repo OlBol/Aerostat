@@ -66,11 +66,12 @@
     &:before{
       content: '1';
       color: #fff;
-      background-image: url(../img/ball.png);
+      background-image: url(../img/png-sprite.png);
+      background-position: -65px -34px;
       background-repeat: no-repeat;
       position: absolute;
-      height: 55px;
-      width: 38px;
+      height: 54px;
+      width: 37px;
       left: 0;
       text-align: center;
     }
@@ -167,8 +168,6 @@
       }
 
       &:before{
-        height: 55px;
-        width: 38px;
         top: 40px;
         left: 0;
         right: 0;

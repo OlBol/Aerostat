@@ -507,10 +507,11 @@ body {
 }
 .promo-block__btn:after {
     content : '';
-    background-image : url(../img/pointer.png);
+    background-image : url(../img/png-sprite.png);
+    background-position : -157px -40px;
     background-repeat : no-repeat;
-    width : 20px;
-    height : 40px;
+    width : 18px;
+    height : 29px;
     position : absolute;
     bottom : 5px;
     left : 50%;
@@ -601,23 +602,32 @@ body {
     -webkit-box-align : center;
         -ms-flex-align : center;
             align-items : center;
-    height : 80px;
     box-sizing : border-box;
+    height : 80px;
 }
 .advantages__item:first-child .advantages__text::before {
-    background-image : url(../img/finger.png);
+    background-image : url(../img/png-sprite.png);
+    background-position : 0 -50px;
+    width : 56px;
+    height : 58px;
 }
 .advantages__item:nth-child(2) .advantages__text::before {
-    background-image : url(../img/glasses.png);
+    background-image : url(../img/png-sprite.png);
+    background-position : 0 -108px;
+    width : 75px;
     height : 30px;
 }
 .advantages__item:nth-child(3) .advantages__text::before {
-    background-image : url(../img/camera.png);
-    bottom : 0;
+    background-image : url(../img/png-sprite.png);
+    background-position : 0 0;
+    width : 65px;
+    height : 50px;
 }
 .advantages__item:last-child .advantages__text::before {
-    background-image : url(../img/binoculars.png);
-    height : 40px;
+    background-image : url(../img/png-sprite.png);
+    background-position : -65px 0;
+    width : 72px;
+    height : 34px;
 }
 @media (min-width: 768px) {
     .advantages {
@@ -808,11 +818,12 @@ body {
 .slider:after,
 .slider:before {
     content : '';
-    background-image : url(../img/slider-arrow.png);
+    background-image : url(../img/png-sprite.png);
+    background-position : -137px -40px;
     background-repeat : no-repeat;
     position : absolute;
     width : 20px;
-    height : 35px;
+    height : 34px;
     top : 40%;
     right : 0;
     cursor : pointer;
@@ -920,11 +931,12 @@ body {
 .flight__item:before {
     content : '1';
     color : #fff;
-    background-image : url(../img/ball.png);
+    background-image : url(../img/png-sprite.png);
+    background-position : -65px -34px;
     background-repeat : no-repeat;
     position : absolute;
-    height : 55px;
-    width : 38px;
+    height : 54px;
+    width : 37px;
     left : 0;
     text-align : center;
 }
@@ -1017,8 +1029,6 @@ body {
         width : 190px;
     }
     .flight__item:before {
-        height : 55px;
-        width : 38px;
         top : 40px;
         left : 0;
         right : 0;
@@ -1140,10 +1150,11 @@ body {
 }
 .cost-form__wrapper--name:before {
     content : '';
-    background-image : url(../img/man.png);
+    background-image : url(../img/png-sprite.png);
+    background-position : -159px -97px;
     background-repeat : no-repeat;
-    height : 20px;
-    width : 20px;
+    height : 15px;
+    width : 15px;
     position : absolute;
     top : 48px;
     left : -125px;
@@ -1156,10 +1167,11 @@ body {
 }
 .cost-form__wrapper--tel:before {
     content : '';
-    background-image : url(../img/tel.png);
+    background-image : url(../img/png-sprite.png);
+    background-position : -159px -74px;
     background-repeat : no-repeat;
-    height : 20px;
-    width : 20px;
+    height : 19px;
+    width : 19px;
     position : absolute;
     top : 45px;
     left : -65px;
@@ -1331,10 +1343,11 @@ body {
     }
     .accordion__item:before {
         content : '';
-        background-image : url(../img/arrow.png);
+        background-image : url(../img/png-sprite.png);
+        background-position : -137px -120px;
         background-repeat : no-repeat;
         width : 10px;
-        height : 10px;
+        height : 9px;
         top : 7px;
         position : absolute;
     }
@@ -1572,11 +1585,12 @@ body {
     .rewiews__wrapper:after,
     .rewiews__wrapper:before {
         content : '';
-        background-image : url(../img/slider-arrow.png);
+        background-image : url(../img/png-sprite.png);
+        background-position : -137px -40px;
         background-repeat : no-repeat;
         position : absolute;
         width : 20px;
-        height : 35px;
+        height : 34px;
         top : 40%;
         right : 0;
         cursor : pointer;
@@ -1644,11 +1658,12 @@ body {
 }
 .contacts__social--email:before {
     content : '';
-    background-image : url(../img/email.png);
+    background-image : url(../img/png-sprite.png);
+    background-position : -65px -88px;
     background-repeat : no-repeat;
     position : absolute;
-    height : 20px;
-    width : 25px;
+    height : 17px;
+    width : 23px;
     top : 10px;
     left : 0;
 }
@@ -1659,11 +1674,12 @@ body {
 }
 .contacts__address:before {
     content : '';
-    background-image : url(../img/plane.png);
+    background-image : url(../img/png-sprite.png);
+    background-position : -137px 0;
     background-repeat : no-repeat;
     position : absolute;
     height : 40px;
-    width : 42px;
+    width : 41px;
     top : 70px;
     left : 0;
     right : 0;
@@ -1679,11 +1695,12 @@ body {
 }
 .contacts__office:before {
     content : '';
-    background-image : url(../img/location.png);
+    background-image : url(../img/png-sprite.png);
+    background-position : -102px -34px;
     background-repeat : no-repeat;
     position : absolute;
     height : 50px;
-    width : 40px;
+    width : 35px;
     top : 10px;
     left : 0;
 }
@@ -1695,22 +1712,24 @@ body {
 }
 .contacts__social--vk:before {
     content : '';
-    background-image : url(../img/vk.png);
+    background-image : url(../img/png-sprite.png);
+    background-position : -137px -97px;
     background-repeat : no-repeat;
     position : absolute;
-    width : 25px;
-    height : 25px;
+    width : 22px;
+    height : 23px;
 }
 .contacts__social--fb {
     position : relative;
 }
 .contacts__social--fb:before {
     content : '';
-    background-image : url(../img/facebook.png);
+    background-image : url(../img/png-sprite.png);
+    background-position : -75px -108px;
     background-repeat : no-repeat;
     position : absolute;
-    width : 25px;
-    height : 25px;
+    width : 22px;
+    height : 23px;
     left : 40px;
 }
 .contacts__social--inst {
@@ -1718,11 +1737,12 @@ body {
 }
 .contacts__social--inst:before {
     content : '';
-    background-image : url(../img/instagram.png);
+    background-image : url(../img/png-sprite.png);
+    background-position : -137px -74px;
     background-repeat : no-repeat;
     position : absolute;
-    width : 25px;
-    height : 25px;
+    width : 22px;
+    height : 23px;
     left : 80px;
 }
 @media (min-width: 768px) {
@@ -1762,4 +1782,3 @@ body {
         width : 30%;
     }
 }
-

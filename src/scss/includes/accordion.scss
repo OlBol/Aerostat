@@ -27,10 +27,11 @@
 
       &:before{
         content: '';
-        background-image: url(../img/arrow.png);
+        background-image: url(../img/png-sprite.png);
+        background-position: -137px -120px;
         background-repeat: no-repeat;
         width: 10px;
-        height: 10px;
+        height: 9px;
         top: 7px;
         position: absolute;
 

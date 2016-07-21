@@ -28,10 +28,11 @@
 
     &:after{
       content: '';
-      background-image: url(../img/pointer.png);
+      background-image: url(../img/png-sprite.png);
+      background-position: -157px -40px;
       background-repeat: no-repeat;
-      width: 20px;
-      height: 40px;
+      width: 18px;
+      height: 29px;
       position: absolute;
       bottom: 5px;
       left: 50%;
